@@ -17,7 +17,5 @@ Let’s just consider these past three days as an introduction to Linux systems 
 From now on, I’ll use this platform to share my project experiences and personal journey.
 
 Keep it up!
-DCH
-
-![HELLO WORLD](http://img.pandior.ink/v2-6f979da8a30bc87fe4ab4958a3192e42_1440w.jpg)
+C. D.
 

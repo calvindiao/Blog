@@ -5,19 +5,9 @@ updated: 2020-07-28
 mathjax: true
 ---
 
-# Exploration of a Sound Localization Solution for the Beacon Group in the 15th National University Intelligent Vehicle Competition
-
 ### Rules Download
 
-Here is the full content translated into English while retaining the original images and formatting.
-
-------
-
-# Preliminary Exploration of a Sound Localization Solution for the Beacon Group in the 15th National College Student Intelligent Vehicle Competition
-
-### Rules Download
-
-[15th National College Student Intelligent Vehicle Competition Rules for Speed Racing](https://smartcar.cdstm.cn:8083/ueditor/jsp/upload/file/1583802788498046326.pdf){% btn 'https://smartcar.cdstm.cn:8083/ueditor/jsp/upload/file/1583802788498046326.pdf',比赛规则（全）,far fa-hand-point-right,block %}
+[15th National College Student Intelligent Vehicle Competition Rules for Speed Racing](https://smartcar.cdstm.cn:8083/ueditor/jsp/upload/file/1583802788498046326.pdf){% btn 'https://smartcar.cdstm.cn:8083/ueditor/jsp/upload/file/1583802788498046326.pdf',Rules ,far fa-hand-point-right,block %}
 
 ## Excerpts from Beacon Group Rules
 
@@ -75,65 +65,63 @@ The peak of the correlation result corresponds to the actual signal delay.
 
 
 
-### 方案一：FM信号与MIC信号进行互相关运算
+### Solution 1: Cross-Correlation Operation Between FM Signals and MIC Signals
 
-#### 方案概述
+#### Solution Overview
 
-*这个方案为我们目前正在使用的方案。*
+*This is the solution we are currently using.*
 
-利用`RDA5807`接收的**FM信号**和麦克风阵列接收到的**音频信号**进行**互相关**运算。
+The **FM signal** received by the `RDA5807` and the **audio signal** captured by the microphone array are processed using **cross-correlation** operations.
+
+
 
 ![RDA5807](http://img.pandior.ink/image-20200727164409598.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim)
 
-#### 优劣分析
+#### Advantages and Disadvantages Analysis
 
-+ 优点
+- **Advantages**
+  - FM signals propagate in space as electromagnetic waves at the speed of **light**, making them suitable as reference signals.
+  - The speed of sound is approximately 340 m/s. By performing a cross-correlation operation to determine the peak index and combining it with the sampling rate f<sub>sample</sub>, the positioning accuracy can be calculated as V<sub>sound</sub>/f<sub>sample</sub>.
+  - Offers a certain degree of **fault tolerance**, allowing precise positioning even if music is played near the microphone.
+- **Disadvantages**
+  - High requirements for sound propagation: no echoes and minimal interference or noise.
+  - The RAM resources of the microcontroller are limited, supporting a maximum of only 2048 points for operations. This restricts the ability to improve accuracy by increasing the sampling rate.
+  - The speaker-microphone system is not a **pure delay system**, as it exhibits different **amplitude-frequency characteristics** and **phase-frequency characteristics** at different frequencies.
+- **Optimization Plan**
+  - Use the FFT algorithm to convert the cross-correlation operation into **frequency-domain conjugate multiplication** and then solve the cross-correlation using IFFT. FFT (Fast Fourier Transform) reduces the time complexity of DFT (Discrete Fourier Transform) from *O(N<sup>2</sup>)* to ***O(NlogN)***. Additionally, FFT is more accurate than DFT due to reduced rounding errors.
+  - Replace the current `MAX9814` microphone receiver sold in most smart car stores with **Knowles silicon microphones**. Compared to electret microphones (conventional microphones), silicon microphones offer smaller size, better product consistency, and higher stability, making them more suitable for high-end devices. (Experimental results confirm that silicon microphones provide significantly more stable distance measurements than electret microphones.)
 
-  + FM信号以电磁波形式在空间传播，传播速度为**光速**，可作为参考信号
-  + 声音传播速度约为340m/s，通过互相关运算求出峰值对应的下标结合采样率f<sub>采样</sub>，可求出定位精度为V<sub>声音</sub>/f<sub>采样</sub>
-  + 具有一定的**容错率**，即使在麦克风旁边放歌也可以精准定位
+<img src="http://img.pandior.ink/image-20200727115050206.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="驻极体麦克风" style="zoom:50%;" />
 
-+ 缺点
 
-  + 对声音传播要求比较高，无回声，无较大干扰噪声
-  + 单片机内部RAM资源有限，最大仅支持2048个点运算，限制了通过提高采样率达到提高精度的方式
-  + 喇叭麦克风组成的系统并非**纯延迟系统**，该系统对于不同的频率有着不同的**幅频特性**和**相频特性**
 
-+ 优化方案
+<img src="http://img.pandior.ink/image-20200727115145961.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="硅麦" style="zoom: 67%;" />
 
-  + 通过FFT算法，将互相关运算先转为**频域共轭相乘**再通过IFFT求解互相关，FFT（快速傅里叶变化）将DFT（离散傅里叶变换）时间复杂度从*O(N<sup>2</sup>)*降至***O(NlogN)***，由于舍弃误差，FFT还会比DFT精确很多。
+- To achieve a sharper peak in the cross-correlation function, the *generalized cross-correlation* method can be used, which involves **whitening the input signal with a weighting function in the frequency domain**. (Currently, the standard cross-correlation algorithm provides relatively stable results. Although there is some noise, the signal-to-noise ratio is within an acceptable range, with at most one value deviating. Whether to introduce the weighting function will be decided based on future circumstances.)
+- Use the `TC264DA` chip. Compared to the `TC264D`, the DA version includes hardware FFT and 512KB of EMEM storage space:
+  - The hardware FFT supports a maximum of 1024 points, which is ~~basically useless~~.
+  - Accessing the 512KB EMEM memory space takes three times as long as accessing the CPU's internal memory.
+- Increase the sampling period, effectively extending the sweep frequency duration. This can suppress the impact of environmental noise to some extent. However, the competitive nature of the contest limits us to collecting at most two cycles of signals. (Practical results show that the cross-correlation result from two cycles is significantly better than that from one cycle.)
 
-  + 采取**楼氏硅麦**取代目前智能车各大店铺售卖的基于`MAX9814`咪头接收器，硅麦相对于驻极体麦克风（咪头），具有体积小，产品一致性好，稳定等特点，主要用于高端设备。（实验结果确实如此，硅麦测距数值比咪头稳定很多）
+#### MATLAB Simulation Results
 
-    <img src="http://img.pandior.ink/image-20200727115050206.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="驻极体麦克风" style="zoom:50%;" />
+~~The original signal did not use a frequency-modulated signal because I was lazy, but it’s roughly the same~~.
 
-    
 
-  <img src="http://img.pandior.ink/image-20200727115145961.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="硅麦" style="zoom: 67%;" />
-
-  + 为了获得更陡峭极值的互相关函数可以使用广义互相关*（generalized cross-correlation）*，**在频域使用一个加权函数白化输入信号**（目前使用的一般互相关算法数值比较稳定，虽然有些许噪声，但是信噪比还在可接受范围，最多跳跃一个值，后续根据情况决定是否引入加权函数）
-  + 使用`TC264DA`芯片，相比于`TC264D`，DA多了硬件FFT以及512KB的EMEM存储空间
-    + 此硬件FFT最大支持1024个点，~~基本没用~~
-    + CPU访问512KB的EMEM内存空间花费的时间是访问自己内存空间的3倍
-  + 增加采样周期，也就是提高扫频的时间长度，在一定程度上可以抑制环境噪声的影响，但比赛的竞技性质决定我们最多采集两个周期的信号（实际情况证明两个周期的互相关结果明显优于采集一个周期运算结果）
-
-#### MATLAB仿真结果
-
-~~原始信号并没有使用变频信号，因为懒，反正差不多~~~
 
 ![仿真结果](http://img.pandior.ink/image-20200801115559780.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim)
 
-#### 方案结果
+#### Program Results
 
 ![整体结构](http://img.pandior.ink/image-20200728213957515.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim)
 
 ![测距结果](http://img.pandior.ink/image-20200728213913512.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim)
 
-###  方案二：将FM信号与MIC信号转换成方波进行输入捕获
+### Solution 2: Converting FM Signals and MIC Signals into Square Waves for Input Capture
 
-#### 方案概述
+#### Solution Overview
 
-`RDA5807`、硅麦都是将FM信号转换成变化的电压信号，然后通过ADC读取对应的电压大小。此时我们可以通过一个滞回比较器将正弦波信号转换成方波信号，通过输入捕获，仅采集FM任意一小节波形对应的频率，然后在声音的“方波“中寻找与之对应的频率波形从而算出相位差。
+Both the `RDA5807` and the silicon microphone convert FM signals into varying voltage signals, which are then read by the ADC to obtain the corresponding voltage values. At this point, a hysteresis comparator can be used to convert the sine wave signal into a square wave signal. Through input capture, only a small segment of the FM waveform is sampled to determine its frequency. Subsequently, the corresponding frequency waveform is located within the sound's "square wave," allowing the phase difference to be calculated.
 
 <img src="http://img.pandior.ink/QQ图片20200728210226.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="手机控制器" style="zoom:25%;" />
 
@@ -143,37 +131,35 @@ The peak of the correlation result corresponds to the actual signal delay.
 
 <img src="http://img.pandior.ink/image-20200728210741188.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="通过滞回比较器的波形图" style="zoom: 80%;" />
 
-可以看见波形并不是非常的理想，$t_{pd}$（Propagation delay time）过大，但是比较器采用的是TI的`TL3201`，根据芯片手册理论值应为50ns左右，后续有时间研究一下这个问题。
+It can be observed that the waveform is not ideal, as the $t_{pd}$ (Propagation delay time) is excessively large. However, the comparator being used is TI's `TL3201`, which, according to the chip datasheet, should theoretically have a delay of around 50ns. This issue will be investigated further when time permits.
 
 ![datasheet部分](http://img.pandior.ink/image-20200728211221158.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim)
 
-#### 优劣分析
+#### Advantages and Disadvantages Analysis
 
-+ 优点
+- **Advantages**
+  - This method is very fast in solving the time difference, with the theoretical maximum time difference $\triangle  t$ by:
 
-  + 这个方法求解时间差的速度非常的快，理论上最大时间$\triangle  t$为
 
-    
-    $$
-    \triangle  t=\frac{L_{max}}{V_{voice}}
-    $$
+$$
+\triangle  t=\frac{L_{max}}{V_{voice}}
+$$
 
-+ 缺点
++ ### Disadvantages
 
-  + 容错率过低，一旦**对应FM频率的麦克风波形**没捕捉到结果会相差很大（这点可以通过剪枝解决，如一旦发现麦克风频率低于捕获FM的频率就重新捕获FM信号）
-  + 变频信号有部分信号对应的幅度过小导致无法上拉比较器
-
-  + 并非理想比较器，总之就是**理想很丰满，现实很骨感**
+  - **Low fault tolerance**: If the **microphone waveform corresponding to the FM frequency** is not captured, the result will differ significantly. (This can be mitigated through pruning. For example, if the microphone frequency is found to be lower than the captured FM frequency, the FM signal can be recaptured.)
+  - Some frequency-modulated signals have amplitudes that are too small, making it impossible to trigger the comparator.
+  - The comparator is not ideal. In summary, **the ideal is rich, but reality is harsh.**
 
   <img src="http://img.pandior.ink/image-20200728213550222.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="变频信号对应的方波波形" style="zoom:67%;" />
 
-  + 将死区空间设小以后非常容易受噪声干扰
+  + Reducing the dead zone makes it highly susceptible to noise interference.
 
-### 方案三：采用纯麦克风阵列定位
+### Solution 3: Pure Microphone Array Localization
 
-#### 方案概述
+#### Solution Overview
 
-属于弱化版方案一，主要利用GCC-PHAT算法
+This is a simplified version of Solution 1, primarily utilizing the GCC-PHAT algorithm.
 
 <img src="http://img.pandior.ink/image-20200728215616767.png?imageMogr2/format/png/blur/1x0/quality/100|watermark/2/text/cGFuZGlvci5pbms=/font/dmlqYXlh/fontsize/1760/fill/IzQyNkZFQQ==/dissolve/58/gravity/SouthEast/dx/20/dy/20|imageslim" alt="求解角度" style="zoom:50%;" />
 
@@ -181,7 +167,7 @@ The peak of the correlation result corresponds to the actual signal delay.
 
 
 
-### 方案四：利用鉴相器AD8302输出相位信息
+### Solution 4: Using the AD8302 Phase Detector to Output Phase Information
 
-*这个方案是在群里潜水看他们聊天看到的，回头验证一下看看有没有可行性*
+*This solution was discovered while lurking in a group chat. I'll verify later to see if it's feasible.*
 
