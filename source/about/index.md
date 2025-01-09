@@ -8,22 +8,22 @@ title: About me
 
 Hey, guys! Welcome to Nerdy Café. 
 
-This is a peaceful place where we can explore all sorts of interesting things together. I earned my bachelor’s degree with **honors** from a prestigious honors department, Changwang, at NUIST from 2018 to 2022. Since 2024, I’ve been a graduate student in Computing and Software at McMaster.
+This is a peaceful place where we can explore all sorts of interesting things together. I earned my bachelor’s degree with **honors** from a prestigious honors department, Changwang, @NUIST from 2018 to 2022. Since 2024, I’ve been a graduate student in Computing and Software @McMaster.
 
-I love watching movies (I even built a NAS for my collection), working out (jogging, hitting the gym), and spending time with my cat. Speaking of which, I have a cute British Shorthair named Tandy. He’s a bit aloof and prefers watching me code from his high cabinet rather than cuddling.
+I love watching movies (I even built a Home Theater for my collection), working out (jogging, hitting the gym), and spending time with my cat. Speaking of which, I have a cute British Shorthair named Tandy. He’s a bit aloof and prefers watching me code from a high cabinet.
 
-<img src="https://img.pandior.ink/tandy.jpeg" alt="image-20240725110916360 PM" style="zoom: 10%;" />
+<img src="http://img.pandior.ink/tandy.jpeg" alt="image-20240725110916360 PM" style="zoom: 10%;" />
 
 My life’s goal is to investigate and explore tech innovations, and I’m committed to it, no matter how challenging the journey might be.
 
-I’m glad you’re here spending your time at Nerdy Café. Feel free to email me anytime at diaochenhao@gmail.com. *^O^*
+I’m glad you’re here spending your time at Nerdy Café. Feel free to email me anytime at calvindiao@gmail.com. *^O^*
 
 ---
 
 ## Education
 
 - <b><font>B.Eng. (Honors)</b> in Electronic Information Engineering (joint program with University of Chinese Academy of Sciences), ***Nanjing University of Information Science & Technology***, Sep. 2018 - Jul. 2022
-  - Rank: No.1 (GPA: 3.87/4.00)
+  - Rank: No.1 (GPA: 3.9/4.00)
   - Study in Changwang School of Honors
 
 - <b><font>M.Eng.</b> in Computing and Software, ***McMaster University***, Jan. 2024 - Present
@@ -50,7 +50,7 @@ I’m glad you’re here spending your time at Nerdy Café. Feel free to email m
 
 ## Publications
 
-- **Diao Chenhao**, Wang Chenggang, Yan Jiade and Yu Jiajun. A new atmospheric boundary layer sonde based on GNSS, Electronic Measurement Technology, 2021,44(23):73-77.DOI:10.19651/j.cnki.emt.2107286.
+- **Diao, Chenhao**, Wang, Chenggang, Yan, Jiade and Yu, Jiajun. A new atmospheric boundary layer sonde based on GNSS, Electronic Measurement Technology, 2021,44(23):73-77.DOI:10.19651/j.cnki.emt.2107286.
 
 ## Patents
 
