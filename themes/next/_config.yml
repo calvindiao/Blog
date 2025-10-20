@@ -75,9 +75,9 @@ footer:
     enable: false
     icp: 苏ICP备20017886号
     # The digit in the num of gongan beian.
-    gongan_id: 
+    gongan_id:
     # The full num of gongan beian.
-    gongan_num: 
+    gongan_num:
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
     gongan_icon_url:
 
@@ -90,7 +90,7 @@ creative_commons:
   license: by-nc-sa
   sidebar: true
   post: false
-  language: 
+  language:
 
 
 # ---------------------------------------------------------------
@@ -179,14 +179,15 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:diaochenhao@gmail.com || envelope
+  E-Mail: mailto:diaochenhao@gmail.com || envelope
   LinkedIn: https://www.linkedin.com/in/chenhaodiao/ || linkedin
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
-  #YouTube: https://youtube.com/yourname || youtube
+  YouTube: https://www.youtube.com/channel/UCBAZdJjdLNMW2AyROlvH1NQ || youtube
+  # Bilibili: https://space.bilibili.com/12385190?spm_id_from=333.1007.0.0 || tv
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
 
@@ -234,7 +235,7 @@ chat:
 # ---------------------------------------------------------------
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+excerpt_description: false
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.

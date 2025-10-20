@@ -5,7 +5,9 @@
 # Site
 title: Nerdy Café
 subtitle: ''
-description: 'Welcome to Nerdy Café!  Grab a virtual coffee, and go through my life!'
+description: |
+  Welcome to Nerdy Café! <br>
+  Grab a coffee ☕️, and go through my life!
 keywords:
 author: Chenhao (Calvin) Diao
 language: en
@@ -13,7 +15,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://pandior.ink
+url: https://techliker.com/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
