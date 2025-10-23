@@ -31,10 +31,11 @@ The project integrated multiple hardware and software technologies, covering **s
 
 ---
 
-### 🚀 Future Improvements
+### 💡 Competition-winning Features
 
+- The system employed **Dual MCU parallel computation**. One was dedicated to **vehicle control** and the other to **signal acquisition and processing**.  This separation significantly improved **system responsiveness** and **computational efficiency**.
+- We dedicated and integrated a specialized **8-bit parallel ADC chip** for high-speed, high-precision data sampling, substantially improving signal accuracy compared to serial ADC solutions.
 - Introduce **path prediction and dynamic obstacle avoidance algorithms** for more intelligent navigation.  
-- Develop a **PC-based monitoring system or web control interface** to support real-time system visualization and debugging.
 
 ---
 
@@ -59,8 +60,32 @@ The project integrated multiple hardware and software technologies, covering **s
           allowfullscreen>
   </iframe>
     <br>
-  <em>🏆 National Finals Video</em>
+  <em>🏆 National Finals</em>
 </p>
+
+
+---
+
+
+
+### 🏅 Team & Awards
+
+<p align="center">
+  <img src="https://img.pandior.ink/blog/1598536641490.jpeg" width="70%">
+  <br>
+  <em>Part of Team photo</em>
+</p>
+
+
+
+<p align="center" style="display:flex; justify-content:center; gap:10px;">
+  <img src="https://img.pandior.ink/blog/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%B1%8A%E6%99%BA%E8%83%BD%E8%BD%A6%E5%8D%8E%E4%B8%9C%E8%B5%9B%E5%8C%BA%E4%B8%80%E7%AD%89%E5%A5%96.jpg" width="30%">
+  <img src="https://img.pandior.ink/blog/%E7%AC%AC%E5%8D%81%E4%BA%94%E5%B1%8A%E6%99%BA%E8%83%BD%E8%BD%A6%E5%85%A8%E5%9B%BD%E4%BA%8C%E7%AD%89%E5%A5%96.jpg" width="30%">
+</p>
+<p align="center">
+  <em>🏆 First Prize in East China and National Second Prize Certificates 🏆</em>
+</p>
+
 
 ---
 
