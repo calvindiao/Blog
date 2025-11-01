@@ -42,7 +42,7 @@ The project integrated multiple hardware and software technologies, covering **s
 ### 📸 Project Gallery
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/calvindiao/Blog/refs/heads/main/assets/2020/20200925_143817.jpg" width="70%">
+  <img src="/assets/2020/20200925_143817.jpg" width="70%">
   <br>
   <em>Overhead view of the our vehicle</em>
 </p>
@@ -71,7 +71,7 @@ The project integrated multiple hardware and software technologies, covering **s
 ### 🏅 Team & Awards
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/calvindiao/Blog/refs/heads/main/assets/2020/1598536641490.jpeg" width="70%">
+  <img src="/assets/2020/1598536641490.jpeg" width="70%">
   <br>
   <em>Part of Team photo</em>
 </p>
@@ -79,12 +79,13 @@ The project integrated multiple hardware and software technologies, covering **s
 
 
 <p align="center" style="display:flex; justify-content:center; gap:10px;">
-  <img src="https://raw.githubusercontent.com/calvindiao/Blog/refs/heads/main/assets/2020/15th%20smart%20vehicle%20First%20Prize%20in%20East%20China.jpg" width="30%">
-  <img src="https://raw.githubusercontent.com/calvindiao/Blog/refs/heads/main/assets/2020/15th%20smart%20vehicle%20second%20national%20Prize.jpg" width="30%">
+  <img src="/assets/2020/15th%20smart%20vehicle%20First%20Prize%20in%20East%20China.jpg" width="30%">
+  <img src="/assets/2020/15th%20smart%20vehicle%20second%20national%20Prize.jpg" width="30%">
 </p>
 <p align="center">
   <em>🏆 First Prize in East China and National Second Prize Certificates 🏆</em>
 </p>
+
 
 
 
