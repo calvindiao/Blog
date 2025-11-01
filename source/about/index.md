@@ -66,9 +66,9 @@ I love watching movies (I even built a Home Theater at home), working out (joggi
 
   - Water Conservancy Innovation Design Competition, **First Prize in Jiangsu Province**
 
-  - The 15th National Smart Car Competition, **First Prize in East China Division**
+  - The 15th National Smart Car Competition, **First Prize in East China**
 
-  - The 16th National Smart Car Competition, **First Prize in East China Division**
+  - The 16th National Smart Car Competition, **First Prize in East China**
 
   - The 11th Blue Bridge Cup National Software and Information Technology Professional Talent Competition, **First Prize in Jiangsu Province**
 
@@ -76,7 +76,7 @@ I love watching movies (I even built a Home Theater at home), working out (joggi
 
   - The 16th Advanced Mathematics Contest, **Second Prize in Jiangsu Province**
 
-  - "Beidou Cup" National Youth Science and Technology Innovation Competition, **Third Prize in East China Division**
+  - "Beidou Cup" National Youth Science and Technology Innovation Competition, **Third Prize in East China**
 
   - "Shen Tang Cup" 5G Technology and Application Competition, **Second Prize in Jiangsu Province**
 
