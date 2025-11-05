@@ -14,7 +14,7 @@ I love watching movies (I even built a Home Theater at home), working out (joggi
 
 ---
 
-## Education
+## 🎓 Education
 
 - <b><font>B.Eng. (Honors)</b> in Electronic Information Engineering (joint program with University of Chinese Academy of Sciences), ***Nanjing University of Information Science & Technology***, Sep. 2018 - Jul. 2022
   - Rank: No.1 (GPA: 3.9/4.00)
@@ -24,36 +24,36 @@ I love watching movies (I even built a Home Theater at home), working out (joggi
   - GPA: 4.00/4.00
   
 
-## Work experience
+## 💼 Work Experience
 
 - **Software Engineer** @**Chromium**, May. 2025 - Aug. 2025 ([My ChangeList](https://chromium-review.googlesource.com/c/chromium/src/+/6707102))
 - **Software Engineer** @**General Motors**, Sep. 2024 - Aug. 2025
 - **Software Development Engineer** @***Samsung Electronics R&D Center***, Sep. 2022 - Dec. 2023
 
-## Research Experiences
+## 📊 Research Experiences
 
 - June 2019 - June 2020. Presided over the national college student innovation and entrepreneurship training project "GNSS-based Atmospheric Boundary Layer Meteorological Detection System". 
 - Sep. 2021 - June 2022. Wearable Motion Capture and Rehabilitation Evaluation System. Excellent Undergraduate Thesis.
 
-## Scholarships
+## 🎖️ Scholarships
 
 - 2020 National Scholarship (the Toppest Scholarship, 0.1%), **Ministry of Education of the People's Republic of China**
 - 2020 President Scholarship (the Toppest Scholarship, 0.2%), **Nanjing University of Information Science & Technology** 
 - 2021 National Scholarship (the Toppest Scholarship, 0.1%), **Ministry of Education of the People's Republic of China**
 - 2021 President Scholarship (the Toppest Scholarship, 0.2%), **Nanjing University of Information Science & Technology** 
 
-## Publications
+## 📚 Publications
 
 - **Diao, Chenhao**, Wang, Chenggang, Yan, Jiade and Yu, Jiajun. A new atmospheric boundary layer sonde based on GNSS, Electronic Measurement Technology, 2021,44(23):73-77.DOI:10.19651/j.cnki.emt.2107286.
 
-## Patents
+## 💡 Patents
 
 - **Diao, Chenhao** and Hu, Chenming. Atmospheric Boundary Layer Radiosonde with Pluggable Gas Pollution Sensors, ZL 202022208584.5, China Patent.
 - Hu, Chengming, Sun, Wei, **Diao, Chenhao** and Wei, Yanyu. A self-rotating drying rack based on solar azimuth, ZL 202120465357.2, China Patent.
 - Hua, Guohuan, Yang, Xiaopeng, **Diao, Chenhao** and Tang, Rixian. A low-power WIFI sniffer, ZL 202022826902.4, China Patent.
 - **Diao, Chenhao**. GNSS-Based Atmospheric Boundary Layer Meteorological Detection System, China Software Copyright.
 
-## Competation Awards
+## 🏆 Competition Awards
 
 - National Level
   - The 7th National Water Conservancy Innovation Design Competition, **National First Prize**
