@@ -1,5 +1,5 @@
 ---
-title: The 16th Vehicle Competition (2021) - National Second Price
+title: The 16th Vehicle Competition (2021) - National Second Prize
 date: 2021-8-23 17:28:41
 tags:
 ---
@@ -97,4 +97,4 @@ This project integrated a wide range of hardware and software technologies, incl
 
 ---
 
-*This project demonstrates a full-stack integration of embedded systems, perception algorithms, and mechanical design to achieve autonomous sound source localization.*
+*This project showcases a end-to-end embedded system design, including sensor fusion, real-time control, PCB design, and mechanical optimization, to achieve stable self-balancing and autonomous track following.*
