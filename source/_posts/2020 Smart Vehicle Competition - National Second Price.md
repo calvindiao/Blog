@@ -1,5 +1,5 @@
 ---
-title: My first Smart Vehicle Competition (2020) - National Second Price
+title: The 15th Smart Vehicle Competition (2020) - National Second Price
 date: 2020-9-23 13:48:03
 tags:
 ---

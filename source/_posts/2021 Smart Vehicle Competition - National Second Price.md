@@ -1,5 +1,5 @@
 ---
-title: Second Smart Vehicle Competition (2021) - National Second Price
+title: The 16th Vehicle Competition (2021) - National Second Price
 date: 2021-8-23 17:28:41
 tags:
 ---
