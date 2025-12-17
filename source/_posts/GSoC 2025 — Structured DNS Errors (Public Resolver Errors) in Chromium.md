@@ -1,6 +1,7 @@
 ---
 title: Structured DNS Errors in Chromium, GSoC 2025
 date: 2025-08-30
+updated: 2025-08-30
 tags: [GSoC, Chromium, DNS, Networking, C++, IETF]
 ---
 
