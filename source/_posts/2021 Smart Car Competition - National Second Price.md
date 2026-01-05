@@ -1,5 +1,5 @@
 ---
-title: The 16th Vehicle Competition (2021) - National Second Prize
+title: The 16th Smart Car Competition (2021) - National Second Prize
 date: 2021-8-23 17:28:41
 updated: 2021-8-23
 tags:

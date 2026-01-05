@@ -4,13 +4,13 @@ title: About me 👋
 
 ---
 
-Hey, guys! Welcome to Nerdy Café ☕️
+Hey, guys! Welcome to my Café ☕️
 
 This is a place where we can explore all sorts of interesting memories of my life. 
 
 I earned my bachelor’s degree with **honors** from a prestigious honors department, **Changwang @NUIST** from 2018 to 2022. Since 2024, I’ve been a M.Eng student in **Computing and Software @McMaster**.
 
-I love watching movies (I even built a Home Theater at home), working out (jogging, hitting the gym), and spending time with my cat, Tandy. I’m glad you’re here spending your time at Nerdy Café. Feel free to email me anytime at diaochenhao@gmail.com. 🤩
+I love watching movies (I even built a Home Theater (NAS - Projector) at home), working out, and spending time with my cat, Tandy 🐱. I’m glad you’re here spending your time at Nerdy Café. Feel free to email me anytime at diaochenhao@gmail.com. 🤩
 
 ---
 
@@ -20,7 +20,7 @@ I love watching movies (I even built a Home Theater at home), working out (joggi
   - Rank: No.1 (GPA: 3.9/4.00)
   - Study in Changwang School of Honors
 
-- <b><font>M.Eng.</b> in Computing and Software, ***McMaster University***, Jan. 2024 - Dec. 2025 (Expected)
+- <b><font>M.Eng.</b> in Computing and Software, ***McMaster University***, Jan. 2024 - Dec. 2025
   - GPA: 4.00/4.00
   
 
