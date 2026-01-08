@@ -3,11 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Nerdy Café
-subtitle: ''
+title: Calvin's Blog
+subtitle: 'Coding is a game'
 description: |
-  Welcome to Nerdy Café! <br>
-  Grab a coffee ☕️, and go through my life!
+  Chromium Contributor <br>
+  CAS M.Eng Student @McMaster <br>
+
+
 keywords:
 author: Chenhao (Calvin) Diao
 language: en

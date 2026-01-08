@@ -11,11 +11,11 @@ During Google Summer of Code (GSoC) 2025, I worked on bringing **Public Resolver
 
 <!-- more -->
 
-## Why PRE matters
+## 🤔 Why PRE matters
 
 Modern public DNS resolvers may be required to block certain domains. Without a structured signal, clients often treat these failures as network instability. PRE provides a standards-driven way to attach **machine-readable metadata** (and resolver-provided links) so browser can distinguish “blocked” from “broken”.
 
-## Project goals
+## 🎯 Project goals
 
 - Parse PRE’s structured JSON object from the **EDE “extra text”** field
 - Extract key fields defined by [`draft-nottingham-public-resolver-errors-01`](https://datatracker.ietf.org/doc/draft-nottingham-public-resolver-errors/01/?utm_source=chatgpt.com):
@@ -25,7 +25,7 @@ Modern public DNS resolvers may be required to block certain domains. Without a 
 - Add robust unit tests (correctness + edge cases)
 - Integrate behind a feature flag
 
-## What I implemented
+## 🙋 What I implemented
 
 ### 1) PRE parsing in `OptRecordRdata::EdeOpt`
 
@@ -70,7 +70,7 @@ I added comprehensive tests covering:
 Separately, I prepared work to request **EDE on all DNS request types** and validated behavior using a resolver that supports EDE (AdGuard DNS).  
 I also reviewed where EDE fields surface in NetLog to understand current observability and what remains to wire end-to-end.
 
-## Links
+## 🔗 Links
 
 **Main Gerrit CLs (PRE parsing + generator):**
 
@@ -94,13 +94,19 @@ I also reviewed where EDE fields surface in NetLog to understand current observa
 - Practiced separation of concerns: parsing stays in the protocol layer; URL generation is modular and testable.
 - Explored I-JSON ([RFC 7493](https://www.rfc-editor.org/rfc/rfc7493)) validation: initially prototyped stricter compliance checks, then aligned with reviewer feedback that JSON compliance belongs in `base::JSONReader` rather than the net layer.
 
-## Current status
+## Current status and Certificate
 
 - Code compiles and passes `net_unittests`
 - PRE metadata is parsed into `EdeOpt::FilteringDetails`
 - URL generator exists and is tested
 - Feature flag integrated (disabled by default)
 - This establishes the foundation for future Chromium UX to explain DNS blocking clearly and responsibly
+
+<p align="center">
+  <img src="/assets/gsoc/certificate.png" width="80%">
+  <br>
+  <em>Certificate of my GSoC</em>
+</p>
 
 ---
 

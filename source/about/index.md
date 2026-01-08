@@ -4,15 +4,17 @@ title: About me 👋
 
 ---
 
-Hey, guys! Welcome to my Café ☕️
+Hey, guys! Welcome ☕️ 
 
-This is a place where we can explore all sorts of interesting memories of my life. 
+I describe myself as a 'tangible' full-stack engineer. My passion spans from <span style="color: #D32F2F;">**designing circuit boards** </span>and <span style="color: #D32F2F;">**PCB layouts**</span> to bringing hardware to life with <span style="color: #D32F2F;">**embedded software**</span>, and finally connecting it all with <span style="color: #D32F2F;">**backend**</span> and <span style="color: #D32F2F;">**frontend code**</span>. Currently, I’m channeling this broad skillset into my favorite <span style="color: #D32F2F;">**Systems Development**</span>.
 
-I earned my bachelor’s degree with **honors** from a prestigious honors department, **Changwang @NUIST** from 2018 to 2022. Since 2024, I’ve been a M.Eng student in **Computing and Software @McMaster**.
+I love watching movies (I even built a Home Theater [NAS - Projector] at home), working out, and spending time with my cat, Tandy 🐱. I’m glad you’re here. 
 
-I love watching movies (I even built a Home Theater (NAS - Projector) at home), working out, and spending time with my cat, Tandy 🐱. I’m glad you’re here spending your time at Nerdy Café. Feel free to email me anytime at diaochenhao@gmail.com. 🤩
+Feel free to email me anytime at diaochenhao@gmail.com. 
 
 ---
+
+Because I've received quite a few awards... I've only listed some of the ones I found interesting below. 😜
 
 ## 🎓 Education
 
@@ -26,14 +28,14 @@ I love watching movies (I even built a Home Theater (NAS - Projector) at home), 
 
 ## 💼 Work Experience
 
-- **Software Engineer** @**Chromium**, May. 2025 - Aug. 2025 ([My ChangeList](https://chromium-review.googlesource.com/c/chromium/src/+/6707102))
+- **GSoC Open Scource Contributor** @**Chromium**, May. 2025 - Aug. 2025 ([My ChangeList](https://chromium-review.googlesource.com/c/chromium/src/+/6707102))
 - **Software Engineer** @**General Motors**, Sep. 2024 - Aug. 2025
 - **Software Development Engineer** @***Samsung Electronics R&D Center***, Sep. 2022 - Dec. 2023
 
 ## 📊 Research Experiences
 
-- June 2019 - June 2020. Presided over the national college student innovation and entrepreneurship training project "GNSS-based Atmospheric Boundary Layer Meteorological Detection System". 
-- Sep. 2021 - June 2022. Wearable Motion Capture and Rehabilitation Evaluation System. Excellent Undergraduate Thesis.
+- June 2019 - June 2020. Presided over the National University student innovation and entrepreneurship training project "GNSS-based Atmospheric Boundary Layer Meteorological Detection System". 
+- Sep. 2021 - June 2022. Wearable Motion Capture and Rehabilitation Evaluation System. Awarded **The Best Thesis**.
 
 ## 🎖️ Scholarships
 

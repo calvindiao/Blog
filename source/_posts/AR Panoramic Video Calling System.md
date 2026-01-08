@@ -7,7 +7,15 @@ tags: [AR, VR, Unity, XR, Video Streaming, HLS, VolcEngine, Insta360, Rokid]
 
 This is my M.Eng. master project. I built an **AR panoramic video calling system** that enhances an “immersive calling” experience: users can wear **Rokid Air AR glasses** and look around a remote environment in **360°**, as if stepping into the other person’s room. 🤩
 
+<p class="excerpt-cover" align="center">
+  <img src="/assets/AR/arcover.png" width="70%">
+</p>
+
 <!-- more -->
+
+<style>
+.excerpt-cover { display: none !important; }
+</style>
 
 The system follows a modular **capture → cloud distribution → playback** workflow: an **Insta360 X2** captures the scene and pushes the stream to the cloud, a cloud streaming platform transcodes/distributes it, and a **Unity-based AR calling app** renders the live panorama on Rokid with head-tracked viewing. 
 
