@@ -2,12 +2,21 @@
 title: The 16th Smart Car Competition (2021) - National Second Prize
 date: 2021-8-23 17:28:41
 updated: 2021-8-23
-tags:
+tags: [embedded, C/CPP, PCB, PID, System]
+permalink: /smart-car-2021/
 ---
 
 Participating again for the second year, we developed a **self-balancing electric motorcycle** that autonomously follows an electromagnetic track using self-designed magnetic sensors. Without the aid of a flywheel, the vehicle maintains stability through precise **real-time control algorithms**.
 
+<p class="excerpt-cover" align="center">
+  <img src="/assets/2021/20210816_030631.jpg" width="70%">
+</p>
+
 <!-- more -->
+
+<style>
+.excerpt-cover { display: none !important; }
+</style>
 
 This project integrated a wide range of hardware and software technologies, including **electromagnetic signal processing**, **advanced fuzzy PID algorithms**, **power management IC design**, **schematic and PCB design**, and **embedded system integration** with MCU minimal circuit design, **I²C/UART/SPI** communication, and **DMA**-based data buffering.
 
@@ -49,9 +58,11 @@ This project integrated a wide range of hardware and software technologies, incl
   <img src="/assets/2021/20210824_190540.jpg" width="80%">
   <img src="/assets/2021/IMG_20210814_051006.jpg" width="80%">
   <img src="/assets/2021/IMG_20210814_051429.jpg" width="80%">
+  <img src="/assets/2021/photo.jpg" width="80%">
   <br>
   <em>Overhead view of the our vehicle</em>
 </p>
+
 
 ---
 

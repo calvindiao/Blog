@@ -3,6 +3,7 @@ title: AR Panoramic Video Calling System (Rokid AR + Insta360 + Cloud Streaming)
 date: 2025-12-09 17:28:33
 updated: 2025-12-09
 tags: [AR, VR, Unity, XR, Video Streaming, HLS, VolcEngine, Insta360, Rokid]
+permalink: /ar-panoramic-calling/
 ---
 
 This is my M.Eng. master project. I built an **AR panoramic video calling system** that enhances an “immersive calling” experience: users can wear **Rokid Air AR glasses** and look around a remote environment in **360°**, as if stepping into the other person’s room. 🤩

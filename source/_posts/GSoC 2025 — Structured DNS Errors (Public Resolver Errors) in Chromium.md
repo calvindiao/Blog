@@ -3,6 +3,7 @@ title: Structured DNS Errors in Chromium, GSoC 2025
 date: 2025-08-30
 updated: 2025-08-30
 tags: [GSoC, Chromium, DNS, Networking, C++, IETF]
+permalink: /gsoc/
 ---
 
 During Google Summer of Code (GSoC) 2025, I worked on bringing **Public Resolver Errors ([PRE](https://datatracker.ietf.org/doc/draft-nottingham-public-resolver-errors/01/?utm_source=chatgpt.com))** support into **Chromium’s DNS stack**, extending the existing **Extended DNS Error ([EDE, RFC 8914](https://www.rfc-editor.org/rfc/rfc8914))** mechanism. The goal is to help Chromium understand **why** a DNS query failed when a public resolver blocks a domain for policy, legal or other reasons. So the browser can eventually surface a meaningful explanation instead of a generic “DNS error”.

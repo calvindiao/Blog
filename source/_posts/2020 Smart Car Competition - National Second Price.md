@@ -3,11 +3,20 @@ title: The 15th Smart Car Competition (2020) - National Second Prize
 date: 2020-9-23 13:48:03
 updated: 2020-9-23
 tags:
+permalink: /smart-car-2020/
 ---
 
 We designed and built a **Mecanum-wheeled smart vehicle capable of rapidly locating and autonomously positioning an acoustic beacon**.  
 
+<p class="excerpt-cover" align="center">
+  <img src="/assets/2020/20200925_143817.jpg" width="70%">
+</p>
+
 <!-- more -->
+
+<style>
+.excerpt-cover { display: none !important; }
+</style>
 
 The project integrated multiple hardware and software technologies, covering **signal processing**, **control algorithms**, **embedded system design**, and **mechanical optimization**.
 
@@ -43,10 +52,17 @@ The project integrated multiple hardware and software technologies, covering **s
 ### 📸 Project Gallery
 
 <p align="center">
+  <img src="/assets/2020/20200609_223638.jpg" width="70%">
+  <br>
+  <em>Prototype</em>
+</p>
+<p align="center">
   <img src="/assets/2020/20200925_143817.jpg" width="70%">
   <br>
   <em>Overhead view of the our vehicle</em>
 </p>
+
+
 
 ---
 

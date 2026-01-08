@@ -121,7 +121,7 @@ menu:
   About me: /about/ || user
   #tags: /tags/ || tags
   #categories: /categories/ || th
-  archives: /archives/ || archive
+  #archives: /archives/ || archive
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -190,7 +190,7 @@ social:
   # Bilibili: https://space.bilibili.com/12385190?spm_id_from=333.1007.0.0 || tv
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
-  Resume: /assets/resume/Chenhao_Resume.pdf || file-text
+  #Resume: /assets/resume/Chenhao_Resume.pdf || file-text
 
 social_icons:
   enable: true
