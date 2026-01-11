@@ -6,7 +6,7 @@ title: About me 👋
 
 Hey, guys! Welcome ☕️ 
 
-I describe myself as a 'tangible' full-stack engineer. My passion spans from <span style="color: #D32F2F;">**designing circuit boards** </span>and <span style="color: #D32F2F;">**PCB layouts**</span> to bringing hardware to life with <span style="color: #D32F2F;">**embedded software**</span>, and finally connecting it all with <span style="color: #D32F2F;">**backend**</span> and <span style="color: #D32F2F;">**frontend code**</span>. Currently, I’m channeling this broad skillset into my favorite <span style="color: #D32F2F;">**Systems Development**</span>.
+I describe myself as a 'tangible' full-stack engineer. My passion spans from <span style="color: #D32F2F;">**designing circuit boards** </span>and <span style="color: #D32F2F;">**PCB layouts**</span> to bringing hardware to life with <span style="color: #D32F2F;">**embedded software**</span>, and connecting it all with <span style="color: #D32F2F;">**backend**</span> and <span style="color: #D32F2F;">**System code**</span>. 
 
 I love watching movies (I even built a Home Theater [NAS - Projector] at home), working out, and spending time with my cat, Tandy 🐱. I’m glad you’re here. 
 
@@ -14,7 +14,7 @@ Feel free to email me anytime at diaochenhao@gmail.com.
 
 ---
 
-Because I've received quite a few awards... I've only listed some of the ones I found interesting below. 😜
+I've received quite a few awards...So I've only listed some of the ones I found interesting below. 😜
 
 ## 🎓 Education
 
