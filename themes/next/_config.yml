@@ -119,6 +119,8 @@ darkmode: false
 menu:
   home: / || home
   About me: /about/ || user
+  Contributions: https://chromium-review.googlesource.com/q/owner:diaochenhao@gmail.com || code
+
   #tags: /tags/ || tags
   #categories: /categories/ || th
   #archives: /archives/ || archive
